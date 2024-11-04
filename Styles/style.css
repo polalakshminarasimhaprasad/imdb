@@ -1,17 +1,14 @@
-/* all element contains common css  */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-/* variable color css  */
 :root{
     --black : black;
     --grey : rgb(56, 56, 56);
     --low-black : rgb(58, 57, 57);
     --white : #fff;
 }
-/* css for styling scroll bar of web page  */
 body::-webkit-scrollbar {
   border-radius: 15px;
   width: 10px;
@@ -25,21 +22,14 @@ body::-webkit-scrollbar-track {
   background:black;
   border-radius: 10px;
 }
-/* all link have common css  */
 a:link{
     text-decoration: none
 }
 body{
-    /* width: 100vw; */
-    /* height: 100vh; */
     background-color: rgb(56, 56, 56);
     font-family: 'Didact Gothic', sans-serif;
     position: relative;
-    /* font-family: 'Montserrat', sans-serif; */
 }
-
-/* css related to navigation section  */
-
 .imdb-logo img{
     width: 75px;
     height: 35px;
@@ -52,7 +42,6 @@ body{
     justify-content: space-between;
     background-color:var(--black);
 }
-/* logo menu contains logo and menu both  */
 .logo-menu{
     display: flex;
     flex-direction: row;
@@ -66,7 +55,6 @@ body{
     cursor: pointer;
     box-sizing: border-box;
 }
-/* css for fabs login  */
 .fabs-login{
     display: flex;
     flex-direction: row;
@@ -80,7 +68,6 @@ body{
 .fabs-login h3 a{
     color: var(--white);
 }
-/* css for search box  */
 .search-box{
     display: flex;
     justify-content: center;
@@ -88,7 +75,6 @@ body{
     flex-grow: 1;
     position: relative;
 }
-/* sarch box input css  */
 .search-box input {
     width: 100%;
     height: 30px;
@@ -99,7 +85,6 @@ body{
     outline-style: dotted;
     font-size: 1rem;
 }
-/* find icon  */
 #search-icon{
     position: absolute;
     right: 15px;
@@ -115,8 +100,6 @@ body{
     padding: 8px 2px;
     border-radius: 5px;
 }
-
-/* css for popupsection when you hover IMDbPro  */
 .pop-up{
     display: flex;
     flex-direction: row;
@@ -153,7 +136,6 @@ body{
 .popup-list li{ 
     line-height: 25px;
     list-style:disc;
-    /* padding-left: 10px; */
     font-size: 1rem;
 }
 .popup-btn{
@@ -167,16 +149,12 @@ body{
 .imdbpro:hover + .pop-up{
     display: flex;
  }
-
-
- /* css for menu option when you click on menu side section appears to you */
  .side-option{
     position: absolute;
     background: #303030;
     height: 100vh;
     width:300px;
     left:-300px;
-    /* left: 0; */
     top: 0;
     text-align: left;
     z-index: 2;
@@ -207,7 +185,6 @@ body{
 .side-list li:hover{
     background-color: #47474d;
 }
-/* page navigation button css  */
 .page-navigate{
     display: flex;
     justify-content:center;
@@ -227,10 +204,6 @@ body{
     transform: scale(1.1);
     background-color:var(--black);
 }
-
-
-/* responsiveness and media queries */
-/* when the screen size is 700 and less  */
 @media screen and (max-width:700px) {
   #signin{
     display: none;
@@ -243,7 +216,6 @@ body{
     width: 70vh;
   }
 }
-/* when the screen size is 550 and less  */
 @media screen and (max-width:620px) {
   #i-logo{
     display: none;
@@ -260,7 +232,6 @@ body{
   }
     
 }
-/* when the screen size is 380 and less  */
 @media screen and (max-width:480px) {
    #im-pro{
     display: none;
@@ -270,18 +241,12 @@ body{
     min-width: 450px;
   }
 }
-
-/* css for movie content which is coming through API  */
-/* i give this class and id , when we acces element by script  */
-
 #movies{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     box-sizing: border-box;
-    /* align-items: center; */
 }
-/* movie element container css  */
 .movie-element{
     box-sizing: border-box;
     width: 300px;
@@ -292,13 +257,11 @@ body{
     position: relative;
     overflow: hidden;
 }
-/* image of movie element  */
 .movie-element img{
     width: 100%;
     min-height: 80%;
     border-radius: 10px;
 }
-/* movie information box css  */
 .movie-info{
     color: var(--white);
     display: flex;
@@ -307,7 +270,6 @@ body{
     padding-bottom:0.7rem;
     letter-spacing: 0.5px;
 }
-/* star icon css  */
 .star-fab{
     width: 100%;
     display: flex;
@@ -324,7 +286,6 @@ body{
 .icon-color{
     color: red;
 }
-/* overview text related css it came when we access TMDb Api  */
 .overview{
     position: absolute;
     left: 0;
@@ -338,7 +299,6 @@ body{
     transform:translateY(-101%);
     transition: transform 0.4s ease-in;
 }
-/* css for awsom animation when you hover container  */
 .movie-element:hover .overview{
     transform: translateY(0);
 }

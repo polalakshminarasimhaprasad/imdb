@@ -1,11 +1,9 @@
-/* my-favorite css  */
 .my-fav{
     color: #fff;
     font-size: 1.2rem;
     padding-top:7px;
 
 }
-/* main header section css  of myfavorite page */
 #header{
     margin: auto;
     width: 90%;
@@ -15,7 +13,6 @@
     justify-content: space-between;
     margin: 15px auto;
 }
-/* clear all and home btn related css  */
 .fab-btn{
     padding: 6px 12px;
     background-color: rgb(235, 235, 110);
@@ -31,12 +28,9 @@
     border: 1px solid aqua;
 }
 #header span{
-    /* color: #fff; */
     color: aqua;
     font-size: 1.3rem;
 }
-
-/* movies element cart  */
 #list-container{
     display: flex;
     flex-wrap: wrap;
@@ -47,20 +41,17 @@
     border-radius: 20px;
     background-color: rgb(88, 76, 33);
 }
-/* movie image  */
 #movieimg{
     border-radius: 20px;
     height: 420px;
     width: 310px;
 }
-/* detais css  */
 #details{
     display: flex;
     justify-content: space-between;
     padding: 20px;
     align-items: center;
 }
-/* title of movie  */
 .title{
     max-width: 200px;
 }
@@ -69,7 +60,6 @@
     color: white;
     text-decoration: none;
 }
-/* remove movie icon  */
 #removeicon{
     font-size: 1.6rem;
     color: red;
